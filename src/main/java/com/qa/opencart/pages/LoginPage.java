@@ -26,7 +26,7 @@ public class LoginPage {
 	private By forgotPwdLink = By.linkText("Forgotten Password");
 
 	// 2. Public page actions - methods (features)
-	@Step("getLoginPageTitle")
+	@Step("get Login Page Title")
 	public String getLoginPageTitle() {
 		String title = eleUtil.waitForTitleIs(AppConstants.LOGIN_PAGE_TITLE, AppConstants.DEFAULT_TIME_OUT);
 		System.out.println("login page title==>" + title);
