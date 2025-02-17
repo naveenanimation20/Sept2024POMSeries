@@ -1,9 +1,14 @@
 package com.qa.opencart.pages;
 
+import org.openqa.selenium.By;
+
 public class LoginDemoPage {
 
-	public static void main(String[] args) {
-		int i = 10;
+	private By emailId = By.id("login");
+
+	public void login() {
+		System.out.println("do login");
 	}
 
 }
+
