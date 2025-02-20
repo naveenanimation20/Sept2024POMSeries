@@ -42,7 +42,7 @@ public class LoginPageTest extends BaseTest {
 
 	@Description("checking forgot pwd link....")
 	@Severity(SeverityLevel.CRITICAL)
-	@Test(enabled = false)
+	@Test
 	public void forgotPwdLinkExistTest() {
 		Assert.assertTrue(loginPage.isForgotPwdLinkExist(), AppError.ELEMENT_NOT_FOUND_ERROR);
 	}
@@ -51,7 +51,7 @@ public class LoginPageTest extends BaseTest {
 	@Severity(SeverityLevel.BLOCKER)
 	@Test(priority = Integer.MAX_VALUE)
 	public void loginTest() {
-		homePage = loginPage.doLogin(prop.getProperty("username"), System.getProperty("AppPassword"));
+		homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		Assert.assertEquals(homePage.getHomePageTitle(), AppConstants.HOME_PAGE_TITLE, AppError.TITLE_NOT_FOUND_ERROR);
 	}
 
