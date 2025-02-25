@@ -75,7 +75,7 @@ public class LoginPageTest extends BaseTest {
 	
 	@Description("checking page footers....")
 	@Severity(SeverityLevel.NORMAL)
-	@Test(dataProvider = "getFooterData", enabled = false)
+	@Test(dataProvider = "getFooterData")
 	public void footerTest(String footerLink) {
 		Assert.assertTrue(commonsPage.checkFooterLink(footerLink));
 	}
