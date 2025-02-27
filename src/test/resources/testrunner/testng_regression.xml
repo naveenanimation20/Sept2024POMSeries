@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Opencart App Test Regression Suite" thread-count="3"
+<suite name="Opencart App Test Regression Suite" thread-count="5"
 	parallel="tests" verbose="4">
 
 
@@ -19,6 +19,8 @@
 	<test name="Login Page Test_chrome_126">
 		<parameter name="browser" value="chrome" />
 		<parameter name="browserversion" value="126.0" />
+		<parameter name="testname" value="Login Page Test" />
+
 
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
@@ -29,6 +31,8 @@
 	<test name="Login Page Test_chrome_123">
 		<parameter name="browser" value="chrome" />
 		<parameter name="browserversion" value="123.0" />
+		<parameter name="testname" value="Login Page Test" />
+
 
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
@@ -38,6 +42,8 @@
 	<test name="Login Page Test_chrome_113">
 		<parameter name="browser" value="chrome" />
 		<parameter name="browserversion" value="113.0" />
+		<parameter name="testname" value="Login Page Test" />
+
 
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
@@ -47,6 +53,8 @@
 	<test name="Home Page Test">
 		<parameter name="browser" value="chrome" />
 		<parameter name="browserversion" value="113.0" />
+		<parameter name="testname" value="Home Page Test" />
+
 		<classes>
 			<class name="com.qa.opencart.tests.HomePageTest" />
 		</classes>
@@ -55,6 +63,8 @@
 	<test name="Product Info Page Test_firefox_125">
 		<parameter name="browser" value="firefox" />
 		<parameter name="browserversion" value="125.0" />
+		<parameter name="testname" value="ProductInfo Page Test" />
+
 		<classes>
 			<class name="com.qa.opencart.tests.ProductInfoPageTest" />
 		</classes>
